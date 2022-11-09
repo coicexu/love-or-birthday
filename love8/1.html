@@ -32,10 +32,15 @@ canvas {
     autoplay="autoplay" 
     loop="loop" 
     preload="auto"
+	id = "audios"
     src="./1.mp3">
     </audio>
     <script>
        
+	    document.addEventListener('WeixinJSBridgeReady', function() {
+    document.getElementById('audios').play()
+})
+
 /*
  * Settings
  */
